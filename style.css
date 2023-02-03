@@ -1,0 +1,105 @@
+body{
+    background-color: teal;
+}
+
+h1{
+    color: aquamarine;
+}
+
+h2{
+    color: aquamarine;
+}
+
+div{
+    position: relative;
+    animation-name: ocean;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    padding: 2px;
+    margin: 2px;
+}
+
+.dolphin{
+    animation-name: shake;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3s;
+}
+
+@keyframes shake{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.cancel{
+    font-size: 20px;
+    font-weight:bold;
+    font-family: verdana;
+    color: cyan;
+}
+
+.left{
+    text-align: left;
+    color: navy;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+@keyframes ocean{
+  0% {top: 0px; left:100px;}
+  100% {top: 200px; left:200px;}
+}
+
+img{
+    transition: height 1s, filter 1s;
+}
+
+img.interactive-image:hover{
+    height: 320px;
+    filter: brightness(120%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: darkturquoise;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: aquamarine;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: darkblue;
+}
